@@ -65,7 +65,7 @@ public class LibraryManager {
     public void getUserChoice(int choice, File file) {
         switch (choice) {
             case 1:
-                //Add a new word
+                // Add a new word
                 System.out.print("Word: ");
                 String word1 = sc.nextLine();
                 System.out.print("Translation of word: ");
@@ -73,23 +73,23 @@ public class LibraryManager {
                 operation.addNewWord(file, word1, translation);
                 break;
             case 2:
-                //Remove a word
+                // Remove a word
                 System.out.print("Enter the word: ");
                 String word2 = sc.nextLine().toUpperCase();
                 operation.removeWord(file, word2);
                 break;
             case 3:
-                //Translate a word
+                // Translate a word
                 System.out.print("Enter the word: ");
                 String word3 = sc.nextLine().toUpperCase();
                 operation.translate(file, word3);
                 break;
             case 4:
-                //Show all words
+                // Show all words
                 operation.showAllWords(file);
                 break;
             case 5:
-                //Finish the operations
+                // Finish the operations
                 System.out.println("Library operation is finished...");
                 while (true) {
                     Main.menu();

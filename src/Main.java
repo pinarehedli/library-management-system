@@ -27,27 +27,27 @@ public class Main {
         try {
             switch (selection) {
                 case 1:
-                    //Create a new library
+                    // Create a new library
                     System.out.print("Enter library name: ");
                     String name1 = sc.nextLine() + EXTENSION;
                     manager.createLibrary(name1);
                     break;
                 case 2:
-                    //Load the library
+                    // Load the library
                     manager.loadLibrary();
                     break;
                 case 3:
-                    //Remove a library
+                    // Remove a library
                     System.out.print("Enter library name: ");
                     String name2 = sc.nextLine() + EXTENSION;
                     manager.remove(name2);
                     break;
                 case 4:
-                    //Show all libraries
+                    // Show all libraries
                     manager.showLibraries();
                     break;
                 case 5:
-                    //Exit the program
+                    // Exit the program
                     System.out.println("Program is finished...");
                     System.exit(0);
                 default:
